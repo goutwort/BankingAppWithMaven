@@ -1,5 +1,6 @@
 package com.revature;
 
+
 public class Movement {
 	private String date = "";
 	private double amount;

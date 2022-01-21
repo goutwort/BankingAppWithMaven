@@ -1,5 +1,6 @@
 package com.revature;
 
+
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Scanner;
@@ -70,7 +71,6 @@ public class Driver {
 								account = (Account) accounts.get(index);
 								if (account.getLoginName().equals(loginName)) {
 									loginNameFound = true;
-									System.out.println("\nHello Mrs./ Mr. " + account.getOwner().getName() + "!");
 								}
 								++index;
 							}
@@ -78,6 +78,7 @@ public class Driver {
 
 						if (loginNameFound && account.getPassword().equals(password)) {
 							credentialsFound = true;
+							System.out.println("\nHello Mrs./ Mr. " + account.getOwner().getName() + "!");
 						} else
 							System.out.println("\nLogging-in has failed\n");
 					}

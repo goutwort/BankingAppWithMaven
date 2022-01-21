@@ -1,5 +1,6 @@
 package com.revature;
 
+
 public class JointAccount extends Account {
 	private Person secondOwner;
 	

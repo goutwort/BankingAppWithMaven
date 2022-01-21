@@ -1,5 +1,6 @@
 package com.revature;
 
+
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Scanner;
@@ -23,7 +24,7 @@ public class BankingApp {
 		System.out.println("\nMovements of " + account.getLoginName() + "\'s account ");
 		System.out.println("------------------------------");
 		for (Movement m : movements) {
-			System.out.println("Date: " + m.getDate() + ", " + m.getAccountDestination() + ", EUR "
+			System.out.println("Date " + m.getDate() + ", " + m.getAccountDestination() + ", EUR "
 					+ String.format("%,.2f", m.getAmount()));
 		}
 		System.out.println("---------------------------------------");
@@ -120,9 +121,9 @@ public class BankingApp {
 			if (inputScanner.next().equals("yes")) {
 				Account simpleAccount = new SimpleAccount(owner, newLoginName, newPassword);
 				accounts.add(simpleAccount);
+				System.out.println("Account has been created.\n");
 			}
 
-			System.out.println("Account has been created.\n");
 		}
 	}
 

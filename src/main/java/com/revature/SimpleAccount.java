@@ -1,5 +1,6 @@
 package com.revature;
 
+
 public class SimpleAccount extends Account {
 
 	SimpleAccount(Person owner, String loginName, String password){
